@@ -1,0 +1,132 @@
+{
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "duration": 10.61,
+   "narration": "s01_r813437490e.wav",
+   "source": "s01_c0ec00cc82.wav",
+   "narration_start": 0.4,
+   "narration_duration": 9.61,
+   "am": "በደጋው ላይ ባለች አንዲት መንደር፣ አልማዝ የምትባል ሴት ትኖር ነበር።",
+   "en": "In a village in the highlands, there lived a woman named Almaz."
+  },
+  {
+   "id": "s02",
+   "start": 10.61,
+   "duration": 10.33,
+   "narration": "s02_r0988f4eafa.wav",
+   "source": "s02_1c878361e1.wav",
+   "narration_start": 11.01,
+   "narration_duration": 9.33,
+   "am": "ባሏ ከጦርነት ተመለሰ። ልቡ ግን እዚያው ርቆ ቀረ።",
+   "en": "Her husband came home from the war, but his heart stayed far away."
+  },
+  {
+   "id": "s03",
+   "start": 20.94,
+   "duration": 6.49,
+   "narration": "s03_raec0509992.wav",
+   "source": "s03_b4fb008c43.wav",
+   "narration_start": 21.34,
+   "narration_duration": 5.49,
+   "am": "አያናግራትም፣ ፈገግም አይልላትም። አልማዝ ምን እንደምታደርግ ጨነቃት።",
+   "en": "He no longer spoke to her or smiled at her. Almaz did not know what to do."
+  },
+  {
+   "id": "s04",
+   "start": 27.43,
+   "duration": 11.92,
+   "narration": "s04_r472fd665e9.wav",
+   "source": "s04_533b14d355.wav",
+   "narration_start": 27.83,
+   "narration_duration": 10.92,
+   "am": "ወደ ጠቢቡ አዋቂ ሄዳ፣ የፍቅር መድኃኒት እንዲያዘጋጅላት ለመነችው።",
+   "en": "She went to the wise old healer and begged him for a love potion."
+  },
+  {
+   "id": "s05",
+   "start": 39.35,
+   "duration": 6.86,
+   "narration": "s05_r255e523a4d.wav",
+   "source": "s05_373d377a7f.wav",
+   "narration_start": 39.75,
+   "narration_duration": 5.86,
+   "am": "«አዘጋጅልሻለሁ» አላት። «ግን ከሕያው አንበሳ አገጭ ሦስት ጢም አምጪልኝ።»",
+   "en": "\"I will make it,\" he said, \"but bring me three whiskers from the chin of a living lion.\""
+  },
+  {
+   "id": "s06",
+   "start": 46.21,
+   "duration": 7.96,
+   "narration": "s06_rdbe71109d7.wav",
+   "source": "s06_cffd09070f.wav",
+   "narration_start": 46.61,
+   "narration_duration": 6.96,
+   "am": "በየቀኑ ትኩስ ሥጋ ይዛ ወደ አንበሳው ዋሻ ሄደች። በየቀኑም ትንሽ ትንሽ ቀረበች።",
+   "en": "Every day she carried fresh meat to the lion's rocks, and every day she came a little closer."
+  },
+  {
+   "id": "s07",
+   "start": 54.17,
+   "duration": 5.43,
+   "narration": "s07_r95c55e2c8e.wav",
+   "source": "s07_736209d8cb.wav",
+   "narration_start": 54.57,
+   "narration_duration": 4.43,
+   "am": "ሳምንታት አለፉ። አንበሳው ሲያያት ማጓራቱን ተወ።",
+   "en": "Weeks passed. When the lion saw her coming, he no longer roared."
+  },
+  {
+   "id": "s08",
+   "start": 59.6,
+   "duration": 10.24,
+   "narration": "s08_reb04cf2f05.wav",
+   "source": "s08_12bd879033.wav",
+   "narration_start": 60.0,
+   "narration_duration": 9.24,
+   "am": "አንድ ምሽት እየበላ ሳለ፣ በእርጋታ ከአገጩ ሦስት ጢም ነቀለች።",
+   "en": "One evening, while he ate, she gently plucked three whiskers from his chin."
+  },
+  {
+   "id": "s09",
+   "start": 69.84,
+   "duration": 5.99,
+   "narration": "s09_r1fa14ad089.wav",
+   "source": "s09_4c0ec528fa.wav",
+   "narration_start": 70.24,
+   "narration_duration": 4.99,
+   "am": "በኩራት ለአዋቂው ሰጠችው። እርሱ ግን ወደ እሳቱ ወረወራቸው።",
+   "en": "Proudly, she gave them to the healer. He threw them into the fire."
+  },
+  {
+   "id": "s10",
+   "start": 75.83,
+   "duration": 8.67,
+   "narration": "s10_rcaed006248.wav",
+   "source": "s10_522e1cd629.wav",
+   "narration_start": 76.23,
+   "narration_duration": 7.67,
+   "am": "«የዱር አንበሳን በትዕግሥት፣ በድፍረትና በገርነት አላመድሽው። ባልሽን ለመመለስ አስማት አያስፈልግሽም።»",
+   "en": "\"You tamed a wild lion with patience, courage and gentleness. You need no magic to win back your husband.\""
+  },
+  {
+   "id": "s11",
+   "start": 84.5,
+   "duration": 8.17,
+   "narration": "s11_r151e7c7f88.wav",
+   "source": "s11_91cfbcfd12.wav",
+   "narration_start": 84.9,
+   "narration_duration": 7.17,
+   "am": "አልማዝ ወደ ቤቷ ተመለሰች። ቀስ በቀስ፣ በትዕግሥት፣ እንደገና ጀመረች።",
+   "en": "Almaz went home. Slowly and patiently, she began again."
+  }
+ ],
+ "end_card_start": 92.67,
+ "total": 96.17,
+ "narration_engine": {
+  "engine": "reuse",
+  "model": "previous Gemini lines",
+  "tempo": "1.3"
+ }
+}

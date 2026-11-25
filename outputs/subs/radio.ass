@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: AM,Noto Sans Ethiopic,31,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,1,0,0,0,100,100,0,0,1,2,1,2,89,89,43,1
+Style: EN,DejaVu Sans,25,&H00E8F4FF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,2,1,2,89,89,43,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:10.31,AM,,0,0,0,,በደጋው ላይ ባለች አንዲት መንደር፣ አልማዝ የምትባል ሴት ትኖር ነበር።\N{\fnDejaVu Sans\b0\fs25\c&H00E8F4FF&}In a village in the highlands, there lived a woman named Almaz.
+Dialogue: 0,0:00:11.01,0:00:20.64,AM,,0,0,0,,ባሏ ከጦርነት ተመለሰ። ልቡ ግን እዚያው ርቆ ቀረ።\N{\fnDejaVu Sans\b0\fs25\c&H00E8F4FF&}Her husband came home from the war, but his heart stayed far away.
+Dialogue: 0,0:00:21.34,0:00:27.13,AM,,0,0,0,,አያናግራትም፣ ፈገግም አይልላትም። አልማዝ ምን እንደምታደርግ ጨነቃት።\N{\fnDejaVu Sans\b0\fs25\c&H00E8F4FF&}He no longer spoke to her or smiled at her. Almaz did not know what to do.
+Dialogue: 0,0:00:27.83,0:00:39.05,AM,,0,0,0,,ወደ ጠቢቡ አዋቂ ሄዳ፣ የፍቅር መድኃኒት እንዲያዘጋጅላት ለመነችው።\N{\fnDejaVu Sans\b0\fs25\c&H00E8F4FF&}She went to the wise old healer and begged him for a love potion.
+Dialogue: 0,0:00:39.75,0:00:45.91,AM,,0,0,0,,«አዘጋጅልሻለሁ» አላት። «ግን ከሕያው አንበሳ አገጭ ሦስት ጢም አምጪልኝ።»\N{\fnDejaVu Sans\b0\fs25\c&H00E8F4FF&}"I will make it," he said, "but bring me three whiskers from the chin of a living lion."
+Dialogue: 0,0:00:46.61,0:00:53.87,AM,,0,0,0,,በየቀኑ ትኩስ ሥጋ ይዛ ወደ አንበሳው ዋሻ ሄደች። በየቀኑም ትንሽ ትንሽ ቀረበች።\N{\fnDejaVu Sans\b0\fs25\c&H00E8F4FF&}Every day she carried fresh meat to the lion's rocks, and every day she came a little closer.
+Dialogue: 0,0:00:54.57,0:00:59.30,AM,,0,0,0,,ሳምንታት አለፉ። አንበሳው ሲያያት ማጓራቱን ተወ።\N{\fnDejaVu Sans\b0\fs25\c&H00E8F4FF&}Weeks passed. When the lion saw her coming, he no longer roared.
+Dialogue: 0,0:01:00.00,0:01:09.54,AM,,0,0,0,,አንድ ምሽት እየበላ ሳለ፣ በእርጋታ ከአገጩ ሦስት ጢም ነቀለች።\N{\fnDejaVu Sans\b0\fs25\c&H00E8F4FF&}One evening, while he ate, she gently plucked three whiskers from his chin.
+Dialogue: 0,0:01:10.24,0:01:15.53,AM,,0,0,0,,በኩራት ለአዋቂው ሰጠችው። እርሱ ግን ወደ እሳቱ ወረወራቸው።\N{\fnDejaVu Sans\b0\fs25\c&H00E8F4FF&}Proudly, she gave them to the healer. He threw them into the fire.
+Dialogue: 0,0:01:16.23,0:01:24.20,AM,,0,0,0,,«የዱር አንበሳን በትዕግሥት፣ በድፍረትና በገርነት አላመድሽው። ባልሽን ለመመለስ አስማት አያስፈልግሽም።»\N{\fnDejaVu Sans\b0\fs25\c&H00E8F4FF&}"You tamed a wild lion with patience, courage and gentleness. You need no magic to win back your husband."
+Dialogue: 0,0:01:24.90,0:01:32.37,AM,,0,0,0,,አልማዝ ወደ ቤቷ ተመለሰች። ቀስ በቀስ፣ በትዕግሥት፣ እንደገና ጀመረች።\N{\fnDejaVu Sans\b0\fs25\c&H00E8F4FF&}Almaz went home. Slowly and patiently, she began again.

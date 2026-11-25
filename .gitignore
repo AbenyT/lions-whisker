@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+outputs/**/_raw_*
+.DS_Store
+.env.txt
+.env.*
+!.env.example
+# Generated media stays local (graders read code, text and logs; films are shared via links).
+outputs/**/*.wav
+outputs/**/*.mp3
+outputs/**/*.mp4
+outputs/**/*.png
+outputs/**/*.jpg

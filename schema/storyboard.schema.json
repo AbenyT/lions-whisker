@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Storyboard",
+  "description": "The contract between every pipeline stage. Validated before each run.",
+  "type": "object",
+  "required": ["title", "language", "style", "characters", "voice", "music", "shots", "end_card", "export"],
+  "properties": {
+    "title": {
+      "type": "object",
+      "required": ["am", "en"],
+      "properties": {"am": {"type": "string", "minLength": 1}, "en": {"type": "string", "minLength": 1}}
+    },
+    "logline": {"type": "string"},
+    "audience": {"type": "string"},
+    "language": {
+      "type": "object",
+      "required": ["narration", "subtitles"],
+      "properties": {
+        "narration": {"type": "string", "enum": ["am", "en", "om", "ti", "so"]},
+        "subtitles": {"type": "array", "items": {"type": "string"}, "contains": {"const": "en"}, "minItems": 1}
+      }
+    },
+    "style": {
+      "type": "object",
+      "required": ["block", "seed"],
+      "properties": {
+        "block": {"type": "string", "minLength": 10},
+        "negative": {"type": "string"},
+        "seed": {"type": "integer", "minimum": 0}
+      }
+    },
+    "characters": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["description", "seed"],
+        "properties": {"description": {"type": "string", "minLength": 10}, "seed": {"type": "integer"}}
+      }
+    },
+    "voice": {
+      "type": "object",
+      "required": ["model", "voice_name", "style_prompt"],
+      "properties": {"model": {"type": "string"}, "voice_name": {"type": "string"}, "style_prompt": {"type": "string"}}
+    },
+    "music": {
+      "type": "object",
+      "required": ["engine", "prompt", "bpm", "duck_db"],
+      "properties": {
+        "engine": {"enum": ["ace-step", "procedural"]},
+        "fallback_engine": {"enum": ["procedural"]},
+        "prompt": {"type": "string"},
+        "bpm": {"type": "number", "minimum": 40, "maximum": 200},
+        "duck_db": {"type": "number", "maximum": 0}
+      }
+    },
+    "shots": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["id", "beat", "reason", "characters", "framing", "image_prompt", "motion", "narration", "min_duration"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^s[0-9]{2}$"},
+          "beat": {"type": "string"},
+          "reason": {"type": "string", "minLength": 10},
+          "characters": {"type": "array", "items": {"type": "string"}},
+          "framing": {"type": "string"},
+          "image_prompt": {"type": "string", "minLength": 10},
+          "motion": {
+            "type": "object",
+            "required": ["type", "strength"],
+            "properties": {
+              "type": {"enum": ["push_in", "pull_out", "pan_left", "pan_right", "static"]},
+              "strength": {"type": "number", "minimum": 0, "maximum": 0.3}
+            }
+          },
+          "narration": {
+            "type": "object",
+            "required": ["am", "en"],
+            "properties": {"am": {"type": "string"}, "en": {"type": "string"}}
+          },
+          "min_duration": {"type": "number", "minimum": 2, "maximum": 15},
+          "music_cue": {"type": "string"}
+        }
+      }
+    },
+    "end_card": {
+      "type": "object",
+      "required": ["duration", "lines", "ai_notice"],
+      "properties": {
+        "duration": {"type": "number", "minimum": 2},
+        "ai_notice": {"type": "string", "pattern": "(?i)AI"}
+      }
+    },
+    "export": {
+      "type": "object",
+      "required": ["fps", "targets", "keyframe_size", "loudness_lufs"]
+    }
+  }
+}

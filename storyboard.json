@@ -1,0 +1,302 @@
+{
+  "title": {
+    "am": "የአንበሳው ጢም",
+    "en": "The Lion's Whisker"
+  },
+  "logline": "A woman whose husband came home from war a stranger asks a healer for a love potion, and learns she already has what it takes.",
+  "language": {
+    "narration": "am",
+    "subtitles": [
+      "am",
+      "en"
+    ]
+  },
+  "audience": "Ethiopian families and diaspora followers on phones, and colleagues in the 10 Academy cohort. See DESIGN.md.",
+  "style": {
+    "block": "warm hand-painted gouache illustration, visible brush texture, Ethiopian highland palette of ochre, terracotta, deep green and gold, soft golden-hour light, gentle film grain, storybook composition, no text, no letters, no watermark",
+    "negative": "photorealistic, 3d render, modern clothing, cars, text, logo, extra fingers, distorted face",
+    "seed": 4127
+  },
+  "characters": {
+    "almaz": {
+      "description": "Almaz, an Ethiopian woman in her early thirties, warm brown skin, hair in fine shuruba braids, white habesha kemis dress with a green and gold tilet border, white netela shawl over her shoulders",
+      "seed": 1101
+    },
+    "healer": {
+      "description": "an elderly Ethiopian healer, lean face, short white beard, thick white gabi blanket wrapped over his shoulders, carved wooden staff, calm eyes",
+      "seed": 1102
+    },
+    "husband": {
+      "description": "Almaz's husband, a lean Ethiopian man in his thirties, short hair, faded khaki soldier's jacket, tired and distant expression",
+      "seed": 1103
+    },
+    "lion": {
+      "description": "a large Abyssinian lion with a thick dark black mane and tawny body, long white whiskers",
+      "seed": 1104
+    }
+  },
+  "voice": {
+    "model": "gemini-3.8-flash-tts",
+    "voice_name": "Kore",
+    "style_prompt": "Say in Amharic, warmly, at a natural storytelling pace"
+  },
+  "music": {
+    "engine": "ace-step",
+    "prompt": "slow Ethiopian folk lullaby, krar lyre and masinko fiddle, tizita pentatonic mode, soft frame drum, warm and nostalgic, instrumental, 70 bpm",
+    "fallback_engine": "procedural",
+    "bpm": 70,
+    "duck_db": -14
+  },
+  "shots": [
+    {
+      "id": "s01",
+      "beat": "Where we are",
+      "reason": "Establishes the rural highland village and the storytelling mood before we meet anyone.",
+      "characters": [],
+      "framing": "extreme wide establishing shot",
+      "image_prompt": "a small Ethiopian highland village at dawn, round thatched tukul huts, eucalyptus trees, mist in the valley, smoke rising from a hut",
+      "motion": {
+        "type": "push_in",
+        "strength": 0.1
+      },
+      "narration": {
+        "am": "በደጋው ላይ ባለች አንዲት መንደር፣ አልማዝ የምትባል ሴት ትኖር ነበር።",
+        "en": "In a village in the highlands, there lived a woman named Almaz."
+      },
+      "min_duration": 4.5,
+      "music_cue": "intro"
+    },
+    {
+      "id": "s02",
+      "beat": "The problem",
+      "reason": "Shows the husband back from war but emotionally absent, which is the whole conflict. Only the husband's reference is sent: with two references the model drew one character twice (EXPERIMENTS E3).",
+      "characters": [
+        "husband"
+      ],
+      "framing": "medium wide shot, interior",
+      "image_prompt": "night inside a round thatched tukul hut lit only by a small fire on the earth floor: the husband SITS on a low wooden stool beside the fire, shoulders hunched, staring into the flames. In the one doorway behind him, small and half in shadow, stands Almaz, an Ethiopian woman in her early thirties, warm brown skin, hair in fine shuruba braids, white habesha kemis dress with a green and gold tilet border, white netela shawl over her shoulders, watching him. Only one man and one woman. Traditional rural interior, no electricity, no light switch, no modern objects",
+      "motion": {
+        "type": "pan_right",
+        "strength": 0.08
+      },
+      "narration": {
+        "am": "ባሏ ከጦርነት ተመለሰ። ልቡ ግን እዚያው ርቆ ቀረ።",
+        "en": "Her husband came home from the war, but his heart stayed far away."
+      },
+      "min_duration": 4.5,
+      "music_cue": "low"
+    },
+    {
+      "id": "s03",
+      "beat": "Her despair",
+      "reason": "A close-up so the audience feels Almaz's loneliness before she acts.",
+      "characters": [
+        "almaz"
+      ],
+      "framing": "close-up",
+      "image_prompt": "Almaz sits beside a traditional jebena coffee pot, an untouched cup in front of her, eyes lowered, candle light",
+      "motion": {
+        "type": "push_in",
+        "strength": 0.12
+      },
+      "narration": {
+        "am": "አያናግራትም፣ ፈገግም አይልላትም። አልማዝ ምን እንደምታደርግ ጨነቃት።",
+        "en": "He no longer spoke to her or smiled at her. Almaz did not know what to do."
+      },
+      "min_duration": 4.5,
+      "music_cue": "low"
+    },
+    {
+      "id": "s04",
+      "beat": "She asks for magic",
+      "reason": "Introduces the healer and her request, the turn into the quest.",
+      "characters": [
+        "almaz",
+        "healer"
+      ],
+      "framing": "medium shot, two characters",
+      "image_prompt": "inside the healer's dim hut full of hanging herbs and clay pots, Almaz kneels and pleads, the old healer sits listening with his staff",
+      "motion": {
+        "type": "pan_left",
+        "strength": 0.08
+      },
+      "narration": {
+        "am": "ወደ ጠቢቡ አዋቂ ሄዳ፣ የፍቅር መድኃኒት እንዲያዘጋጅላት ለመነችው።",
+        "en": "She went to the wise old healer and begged him for a love potion."
+      },
+      "min_duration": 4.5,
+      "music_cue": "build"
+    },
+    {
+      "id": "s05",
+      "beat": "The impossible condition",
+      "reason": "The healer's condition sets the stakes; his face must show calm certainty.",
+      "characters": [
+        "healer"
+      ],
+      "framing": "close-up",
+      "image_prompt": "close-up of the old healer holding up three fingers of his empty right hand, his other hand on his staff, calm and serious expression, warm light from a fire outside the frame. No flames in his hands",
+      "motion": {
+        "type": "push_in",
+        "strength": 0.1
+      },
+      "narration": {
+        "am": "«አዘጋጅልሻለሁ» አላት። «ግን ከሕያው አንበሳ አገጭ ሦስት ጢም አምጪልኝ።»",
+        "en": "\"I will make it,\" he said, \"but bring me three whiskers from the chin of a living lion.\""
+      },
+      "min_duration": 5.2,
+      "music_cue": "build"
+    },
+    {
+      "id": "s06",
+      "beat": "First approach",
+      "reason": "Shows her fear and the distance between her and the lion on day one.",
+      "characters": [
+        "almaz",
+        "lion"
+      ],
+      "framing": "wide shot",
+      "image_prompt": "wide view of a steep rocky hill at morning: the lion lies on top of a high rock at the summit, and Almaz is very small, far away at the bottom of the slope, holding a piece of meat wrapped in leaves. A long empty slope separates them",
+      "motion": {
+        "type": "pan_right",
+        "strength": 0.1
+      },
+      "narration": {
+        "am": "በየቀኑ ትኩስ ሥጋ ይዛ ወደ አንበሳው ዋሻ ሄደች። በየቀኑም ትንሽ ትንሽ ቀረበች።",
+        "en": "Every day she carried fresh meat to the lion's rocks, and every day she came a little closer."
+      },
+      "min_duration": 5.2,
+      "music_cue": "tension"
+    },
+    {
+      "id": "s07",
+      "beat": "Trust grows",
+      "reason": "Time passing: the same place, closer, the lion calm. Payoff of her patience.",
+      "characters": [
+        "almaz",
+        "lion"
+      ],
+      "framing": "medium wide shot",
+      "image_prompt": "exactly one woman and one lion: Almaz sits alone on the ground watching quietly while the lion eats meat calmly a few steps in front of her, late afternoon light. Only one woman in the picture",
+      "motion": {
+        "type": "push_in",
+        "strength": 0.08
+      },
+      "narration": {
+        "am": "ሳምንታት አለፉ። አንበሳው ሲያያት ማጓራቱን ተወ።",
+        "en": "Weeks passed. When the lion saw her coming, he no longer roared."
+      },
+      "min_duration": 4.5,
+      "music_cue": "warm"
+    },
+    {
+      "id": "s08",
+      "beat": "The whiskers",
+      "reason": "The climax of her courage; a close insert on her hand and the lion's chin.",
+      "characters": [
+        "almaz",
+        "lion"
+      ],
+      "framing": "close-up insert",
+      "image_prompt": "close-up of Almaz's hand gently pulling a long white whisker from the chin of the calm eating lion, sunset light",
+      "motion": {
+        "type": "push_in",
+        "strength": 0.14
+      },
+      "narration": {
+        "am": "አንድ ምሽት እየበላ ሳለ፣ በእርጋታ ከአገጩ ሦስት ጢም ነቀለች።",
+        "en": "One evening, while he ate, she gently plucked three whiskers from his chin."
+      },
+      "min_duration": 4.5,
+      "music_cue": "peak"
+    },
+    {
+      "id": "s09",
+      "beat": "The twist",
+      "reason": "The healer burns the whiskers: the surprise the whole story turns on.",
+      "characters": [
+        "almaz",
+        "healer"
+      ],
+      "framing": "medium shot",
+      "image_prompt": "inside the healer's hut, exactly two people: the old healer, holding his own staff, drops three long white whiskers into a small fire in a clay hearth, and Almaz stands beside him with her hands open in shock. No light bulbs, no floating objects",
+      "motion": {
+        "type": "pan_left",
+        "strength": 0.08
+      },
+      "narration": {
+        "am": "በኩራት ለአዋቂው ሰጠችው። እርሱ ግን ወደ እሳቱ ወረወራቸው።",
+        "en": "Proudly, she gave them to the healer. He threw them into the fire."
+      },
+      "min_duration": 4.5,
+      "music_cue": "stop"
+    },
+    {
+      "id": "s10",
+      "beat": "The lesson",
+      "reason": "The moral, spoken by the healer; held long enough for it to land.",
+      "characters": [
+        "healer"
+      ],
+      "framing": "close-up",
+      "image_prompt": "the old healer smiling kindly, firelight, leaning on his staff, speaking softly",
+      "motion": {
+        "type": "push_in",
+        "strength": 0.06
+      },
+      "narration": {
+        "am": "«የዱር አንበሳን በትዕግሥት፣ በድፍረትና በገርነት አላመድሽው። ባልሽን ለመመለስ አስማት አያስፈልግሽም።»",
+        "en": "\"You tamed a wild lion with patience, courage and gentleness. You need no magic to win back your husband.\""
+      },
+      "min_duration": 6.0,
+      "music_cue": "warm"
+    },
+    {
+      "id": "s11",
+      "beat": "She begins again",
+      "reason": "Closes the loop with the opening interior: same husband, now looking up at her.",
+      "characters": [
+        "almaz",
+        "husband"
+      ],
+      "framing": "medium shot, interior",
+      "image_prompt": "inside the tukul at morning, Almaz pours coffee from a jebena for her husband, he looks up at her with the beginning of a smile",
+      "motion": {
+        "type": "pull_out",
+        "strength": 0.1
+      },
+      "narration": {
+        "am": "አልማዝ ወደ ቤቷ ተመለሰች። ቀስ በቀስ፣ በትዕግሥት፣ እንደገና ጀመረች።",
+        "en": "Almaz went home. Slowly and patiently, she began again."
+      },
+      "min_duration": 5.2,
+      "music_cue": "resolve"
+    }
+  ],
+  "end_card": {
+    "duration": 3.5,
+    "lines": {
+      "am": "የአንበሳው ጢም · የኢትዮጵያ ተረት",
+      "en": "The Lion's Whisker · an Ethiopian folktale"
+    },
+    "ai_notice": "Made with AI: images, narration and music were generated by AI models. Story retold by Abenezer Tilahun."
+  },
+  "export": {
+    "fps": 24,
+    "targets": {
+      "16x9": {
+        "width": 1920,
+        "height": 1080
+      },
+      "9x16": {
+        "width": 1080,
+        "height": 1920
+      }
+    },
+    "keyframe_size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "loudness_lufs": -16
+  }
+}
