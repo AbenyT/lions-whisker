@@ -22,6 +22,7 @@ Needs FFmpeg on your PATH (Windows: `winget install Gyan.FFmpeg`; Ubuntu: `sudo 
 | `make mock` | Offline dry run with placeholder media; no keys needed. Use it to check your setup |
 | `make validate` | Check `storyboard.json` against `schema/storyboard.schema.json` |
 | `make narration` / `keyframes` / `shots` / `music` / `assemble` | One stage at a time |
+| `python pipeline/stats.py` | Calls, failures, cache hits and latency per stage from `runs.jsonl` |
 
 **Change one shot and regenerate only that shot:** edit that shot's `image_prompt` or `narration` in `storyboard.json`, then run `make film` again. Each output file name carries a hash of its inputs; unchanged shots are cache hits, and `runs.jsonl` shows exactly one new model call.
 

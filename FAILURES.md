@@ -47,3 +47,9 @@ What broke, what I tried, what fixed it. Newest at the bottom.
 - **Symptom:** the keyframe stage retried six times and crashed with "CLOUDFLARE_ACCOUNT_ID / CLOUDFLARE_API_TOKEN not set".
 - **Cause:** Windows Notepad saved the edited file as `.env.txt`, so `.env` still had empty values. Found by printing each key's length (never the value) from both files.
 - **Fix:** the loader now reads `.env` then `.env.txt`, ignoring blank values, and the stage stops at once with one clear message if a key is missing, instead of retrying a configuration error. `.env.txt` is git-ignored too.
+
+## F10. First GitHub pushes failed: 87 MB of media, then secrets
+- **Symptom 1:** `git push` uploaded 87.5 MB at about 100 KB/s and the connection dropped (`RPC failed; curl 55`).
+- **Fix 1:** generated media (`outputs/**/*.png|wav|mp3|mp4`) is git-ignored; reviewers read code, text and logs, and the films are shared by link. The push dropped to under 1 MB.
+- **Symptom 2:** GitHub push protection rejected the next push: a real Gemini key and Cloudflare token were in `.env.example`, typed into the public template while editing `.env`.
+- **Fix 2:** reset `.env.example` to blank values with a warning line, deleted the local history and recommitted. The keys never reached GitHub. Lesson: secret scanning on the remote caught what my `.gitignore` could not, because the template is meant to be committed.
